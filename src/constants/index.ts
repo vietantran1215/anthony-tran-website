@@ -8,9 +8,9 @@ export const FIELD: {
     ID: "title",
     TEXT: "Title",
   },
-  LEVEL: {
+  LEVELS: {
     ID: "tSjs",
-    TEXT: "Level",
+    TEXT: "Levels",
   },
   SERIES: {
     ID: "V%5B%7BN",

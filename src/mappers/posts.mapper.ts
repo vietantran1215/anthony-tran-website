@@ -1,9 +1,11 @@
 class PostsMapper {
   mapResponseToPosts(response: any) {
     return response.results.map((p: any) => {
+      console.log(p);
       return {
+        id: p.id,
         title: p.properties.Title.title[0].plain_text,
-        level: p.properties.Level.multi_select.map((item: any) => ({
+        levels: p.properties.Levels.multi_select.map((item: any) => ({
           color: item.color,
           name: item.name,
         })),
